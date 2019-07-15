@@ -1,3 +1,4 @@
+# coursera: intro to tensorflow: week 2
 import tensorflow as tf
 
 print(tf.__version__)
@@ -21,7 +22,7 @@ model = tf.keras.models.Sequential([tf.keras.layers.Flatten(),
 #                                     tf.keras.layers.Dense(5, activation=tf.nn.softmax)])
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy')
-model.fit(training_images, training_labels, epochs=1)
+model.fit(training_images, training_labels, epochs=10)
 
 print('evaluation: ', model.evaluate(test_images, test_labels))
 
